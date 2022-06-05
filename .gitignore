@@ -1,3 +1,13 @@
 .idea
 target
 .vscode
+app-loader/.idea
+app-registry/.idea
+bantu-cortex/.idea
+bantu-cortex-api/.idea
+cockpit-console/.idea
+extensions/.idea
+mno-adapters/.idea
+push-gateway/.idea
+unit-test-kit/.idea
+window-engine/.idea
