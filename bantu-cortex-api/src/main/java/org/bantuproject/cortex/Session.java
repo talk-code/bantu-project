@@ -39,6 +39,7 @@ public interface Session {
      * Gets a value from the session. If the value is a secret it will be returned after decryption.
      * @param key the key to which the value is mapped
      * @return the value mapped to the provided key.
+     * @throws IllegalArgumentException when the key is null or empty
      */
     Optional<String> get(String key);
 
@@ -47,6 +48,7 @@ public interface Session {
      * Deletes a value from the session.
      * @param key the key to which the value is mapped
      * @return true if the value was found and deleted, false if the value wasn't found.
+     * @throws IllegalArgumentException when the key is null or empty
      */
     boolean delete(String key);
 
