@@ -44,10 +44,11 @@ public interface Session {
 
 
     /**
-     *
-     * @param key
+     * Deletes a value from the session.
+     * @param key the key to which the value is mapped
+     * @return true if the value was found and deleted, false if the value wasn't found.
      */
-    void delete(String key);
+    boolean delete(String key);
 
     /**
      * Gets a {@link Map} containing the session values. All secret values will be available in plain-text in the resulting {@link Map}.
